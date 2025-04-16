@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevilFlix Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lora&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #121212, #282828);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #8B0000, #00008B); /* Dark Red to Dark Blue */
+      padding: 25px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 40px rgba(255, 105, 105, 0.3);
+      border-bottom: 4px solid #c70039;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-image {
+      width: 60px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 36px;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-shadow: 0 0 12px rgba(255, 105, 105, 0.8), 0 0 18px rgba(255, 105, 105, 0.6);
+      animation: logoGlow 1.5s ease-in-out infinite alternate;
+      margin: 0;
+    }
+
+    @keyframes logoGlow {
+      0% { text-shadow: 0 0 12px #ff6b6b, 0 0 24px #ff3e3e; }
+      50% { text-shadow: 0 0 18px #ffed00, 0 0 36px #ffb400; }
+      100% { text-shadow: 0 0 12px #ff6b6b, 0 0 24px #ff3e3e; }
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, rgba(255, 105, 105, 0.5), rgba(105, 105, 255, 0.5));
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: linear-gradient(45deg, #ff6b6b, #ffed00);
+      transform: scale(1.05);
+    }
+
+    .section-divider {
+      border-top: 2px dashed #555;
+      margin: 30px auto;
+      width: 90%;
+    }
+
+    #welcomeMessage {
+      text-align: center;
+      padding: 60px;
+      font-size: 26px;
+      color: #ffed00;
+    }
+
+    .footer {
+      background-color: #222;
+      padding: 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 16px;
+      border-top: 3px solid #ff6b6b;
+    }
+
+    .footer a {
+      color: #ff9800;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #ffed00;
+      text-decoration: underline;
+    }
+
+    .footer img {
+      width: 25px;
+      margin-right: 10px;
+      border-radius: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="images/devilflix-logo.png" alt="DevilFlix Logo" class="logo-image" />
+      <h1>DevilFlix Zone</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Series</a>
+      <a href="#">Hollywood</a>
+      <a href="#">Bollywood</a>
+      <a href="#">Anime</a>
+      <a href="#">Upload</a>
+    </nav>
+  </header>
+
+  <div class="section-divider"></div>
+
+  <!-- WELCOME MESSAGE -->
+  <div id="welcomeMessage">
+    🎬 Welcome to <strong>DevilFlix Zone</strong> — Your one-stop hub for downloading awesome movies in all genres and languages! 🚀
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Developed by <strong>DevilVibe1455</strong></p>
+    <p>
+      <img src="images/devilflix-logo.png" alt="Devil Logo" />
+      Follow on Instagram:
+      <a href="https://instagram.com/DevilVibe1455" target="_blank">@DevilVibe1455</a>
+    </p>
+    <p>
+      <img src="images/devilflix-logo.png" alt="YouTube Logo" />
+      Subscribe on YouTube:
+      <a href="https://www.youtube.com/channel/UCtB11Lej7z3rf8JNGRn9qeg" target="_blank">DevilFlix Official</a>
+    </p>
+  </div>
+
+</body>
+</html>
